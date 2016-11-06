@@ -31,8 +31,8 @@ int moveTower(int disc, int source, int dest, int spare)
 		printf("Moved a disc from Tower %d to tower %d\n", source, dest);
 		return 1;
 	} else {
-		return moveTower(disc-1,   source, spare, dest)
-			 + moveTower(1,        source, dest,  spare)
-			 + moveTower(disc - 1, spare,  dest,  source);
+		return moveTower(disc - 1, source, spare, dest)
+		     + moveTower(1,        source, dest,  spare)
+		     + moveTower(disc - 1, spare,  dest,  source);
 	}
 }

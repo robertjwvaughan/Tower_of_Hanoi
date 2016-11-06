@@ -9,7 +9,7 @@
 //Protoype
 int moveTower(int, int, int, int);
 
-main()
+int main()
 {
 	//Declaration
 	int input=0;
@@ -58,5 +58,5 @@ int moveTower(int disc, int source, int dest, int spare)
 		//Recursive Call
 		moveTower(disc - 1, spare, dest, source);
 	}//end else
-	
+	return 0;
 }//end tower()
